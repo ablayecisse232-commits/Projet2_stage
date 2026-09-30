@@ -1,0 +1,220 @@
+/* =========================
+   STYLE GÉNÉRAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* =========================
+   CONTENEUR DU CV
+========================= */
+
+.cv-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   EN-TÊTE
+========================= */
+
+.cv-header {
+    background: linear-gradient(135deg, #0f172a, #2563eb);
+    color: white;
+    padding: 45px;
+    text-align: center;
+}
+
+.cv-header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.cv-header h2 {
+    font-size: 20px;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+.cv-contact {
+    margin-top: 20px;
+}
+
+.cv-contact span {
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+/* =========================
+   CORPS DU CV
+========================= */
+
+.cv-body {
+    padding: 40px;
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+.section h3 {
+    color: #2563eb;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-left: 5px solid #2563eb;
+    padding-left: 12px;
+}
+
+.section p {
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   PROFIL
+========================= */
+
+.profile {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #2563eb;
+}
+
+/* =========================
+   COMPÉTENCES
+========================= */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #e0ecff;
+    color: #1d4ed8;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   FORMATION / EXPÉRIENCE
+========================= */
+
+.card {
+    background: #f8fafc;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h4 {
+    color: #0f172a;
+    font-size: 18px;
+}
+
+.card .date {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* =========================
+   LISTE
+========================= */
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 8px;
+    color: #475569;
+}
+
+/* =========================
+   BOUTON RETOUR
+========================= */
+
+.back-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .cv-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .cv-header {
+        padding: 30px 20px;
+    }
+
+    .cv-header h1 {
+        font-size: 30px;
+    }
+
+    .cv-header h2 {
+        font-size: 17px;
+    }
+
+    .cv-contact span {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .cv-body {
+        padding: 25px 20px;
+    }
+}
